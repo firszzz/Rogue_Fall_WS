@@ -1,0 +1,127 @@
+* {
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: "Comic Sans MS", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+header {
+    width: 15%;
+    height: 100vh;
+    background: rgba(0, 0, 0, .9);
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    justify-content: end;
+    text-align: center;
+    position: fixed;
+}
+
+ul {
+    color: white;
+    font-size: 25px;
+    flex-direction: column;
+    gap: 2rem;
+    list-style: none;
+    margin-bottom: 5rem;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.link {
+    margin-top: 10px;
+    color: black;
+    border: 1px solid black;
+    padding: 3px;
+}
+
+.last {
+    margin-bottom: 5rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    user-select: none;
+}
+
+.h {
+    margin-bottom: 2rem;
+}
+
+.link_box {
+    height: max-content;
+    width: max-content;
+    text-align: center;
+}
+.link_box:hover {
+    background: black;
+}
+.link:hover {
+    color: white;
+}
+
+.music_button {
+    color: white;
+    border: 1px solid white;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.main {
+    width: 85%;
+    float: right;
+}
+
+.text {
+    width: 50%;
+    text-align: center;
+    padding: 0 3rem;
+}
+
+.block {
+    padding-top: 3rem;
+    font-size: 20px;
+    flex-direction: column;
+}
+
+.tag {
+    animation: 1s linear 0s normal none infinite running rot;
+}
+
+@keyframes rot {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+
+
+
+
+
+.flex {
+    display: flex;
+}
