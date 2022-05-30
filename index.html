@@ -9,13 +9,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="blur"></div>
+
+    <div class="bg">
+        <video src="static/bg-video.mp4" autoplay loop muted></video>
+    </div>
+
     <header class="flex">
         <img src="static/Roguefall.png" width="200">
         <audio src="static/bg-sound.mp3"></audio>
-        <div class="music_button" id="m_b" onclick="cli()">&#9835; Включить музыку</div>
+        <div class="music_button" onclick="cli()"><a class="music_text" id="m_b">&#9835; Включить музыку</a></div>
         <ul class="flex">
                 <li><a href="#history">История</a></li>
-                <li><a href="#guides">Гайды</a></li>
+                <li><a href="#guides">Туториал</a></li>
                 <li><a href="#download">Скачать</a></li>
         </ul>
     </header>
@@ -25,38 +31,61 @@
         <div class="text">
 
             <div class="block" id="history">
-                <h1>История создания игры</h1>
+                <h2>Немного об игре</h2>
+                <br>
                 <br>
                 <br>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquam architecto autem commodi consequuntur delectus eius eos ex, excepturi fuga impedit in labore magni maxime nesciunt nulla obcaecati perferendis quasi qui quisquam quos repellendus sed sequi temporibus velit! Enim et eum incidunt nisi numquam quisquam sit vitae. Aut, fugiat libero.
+                    Данная видеоигра разработана специально для предмета <kbd>Программная Инженерия</kbd>, с учетом исследований особенностей жанра Roguelike, а также результата опроса целевой аудитории.
                 </p>
+                <br>
+                <br>
+                <p>
+                    Работа отличается наличием новых для данного жанра механик, а именно попыткой внедрить механики игр-кликеров в неё.
+                </p>
+                <br>
             </div>
 
             <div class="block" id="guides">
-                <h1>Гайды</h1>
+                <h2>Туториал</h2>
+                <br>
+                <br>
+                <br>
+                <p>
+                    Добро пожаловать в <kbd>RogueFall</kbd>. Вам предстоит бесконечно спускаться по городу <kbd>Z</kbd>.
+                </p>
                 <br>
                 <br>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur earum enim illum ipsum labore maiores, similique tenetur. At atque, commodi cupiditate dignissimos doloribus dolorum earum esse eveniet ex fugiat id illo in inventore laboriosam magnam maiores nobis officiis perferendis quam quis, repellat reprehenderit sint voluptate. Asperiores harum nesciunt nisi quasi tempore voluptates voluptatum! Atque delectus, facilis magni natus nihil odit omnis quos sed soluta tempore ullam, veritatis, voluptates voluptatibus. Aperiam deserunt eaque eveniet fugit impedit magnam nam, necessitatibus possimus provident, quo quod recusandae sequi temporibus velit vitae. Consequuntur ducimus eligendi ex fugit minus nam odit officiis quisquam sed unde! Explicabo.
+                    Используйте клавиши <kbd>&lt;WASD&gt;</kbd> для движения персонажа и <kbd>&lt;SPACE&gt;</kbd> для прыжка, а клавишу <kbd>&lt;J&gt;</kbd> для атаки.
                 </p>
                 <br>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquam architecto autem commodi consequuntur delectus eius eos ex, excepturi fuga impedit in labore magni maxime nesciunt nulla obcaecati perferendis quasi qui quisquam quos repellendus sed sequi temporibus velit! Enim et eum incidunt nisi numquam quisquam sit vitae. Aut, fugiat libero.
-                </p>
                 <br>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquam architecto autem commodi consequuntur delectus eius eos ex, excepturi fuga impedit in labore magni maxime nesciunt nulla obcaecati perferendis quasi qui quisquam quos repellendus sed sequi temporibus velit! Enim et eum incidunt nisi numquam quisquam sit vitae. Aut, fugiat libero.
+                    По дороге вам будут встречаться различные противники, атака по ним приносит валюту, за которую вы можете покупать различные улучшения персонажа или вашего пассивного дохода.
                 </p>
+                <br>
+                <br>
+                <p>
+                    Помните, что не всех противников можно уничтожить, а с некоторыми иногда лучше не вступать в драку, ибо куда проще обойти их другим путём. А для перехода на следующий уровень вам нужно будет найти портал.
+                </p>
+                <br>
+                <br>
+                <p>
+                    Удачного спуска! <kbd>=D</kbd>
+                </p>
+                <br>
             </div>
 
             <div class="block last flex" id="download">
-                <h1>Скачать</h1>
+                <h2>Скачать</h2>
+                <br>
                 <br>
                 <br>
                 <p class="h">
-                    Здесь вы можете скачать игру.
+                    Нажмите на кнопку, чтобы скачать игру.
                 </p>
+                <br>
                 <div class="link_box"><a href="static/Roguefall.png" class="link" download>&#9658; Скачать</a></div>
                 <br>
                 <br>

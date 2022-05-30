@@ -6,7 +6,7 @@ function cli() {
     console.log("AA")
     if (flag === false) {
         music.play();
-        music.volume = 0.05;
+        music.volume = 0.1;
         music.loop = true;
         flag = true;
         text_music_button.innerText = "♫ Выключить музыку";

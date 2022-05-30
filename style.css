@@ -1,9 +1,16 @@
+@font-face {
+    font-family: "PressStart";
+    src: url("static/PressStart.TTF") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
 * {
     outline: 0;
     padding: 0;
     margin: 0;
     border: 0;
-    font-family: "Comic Sans MS", sans-serif;
+    font-family: "PressStart", sans-serif;
 }
 
 html {
@@ -16,16 +23,37 @@ body {
     overflow-x: hidden;
 }
 
-header {
-    width: 15%;
+.bg {
+    z-index: -1;
+    position: fixed;
+    width: 100vw;
     height: 100vh;
-    background: rgba(0, 0, 0, .9);
+}
+
+video {
+    width: 100vw;
+}
+
+.blur {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .65);
+    position: fixed;
+    z-index: 1;
+}
+
+header {
+    width: 20%;
+    height: 100vh;
+    background: black;
     flex-direction: column;
     align-items: center;
     gap: 3rem;
     justify-content: end;
     text-align: center;
     position: fixed;
+    z-index: 2;
+    user-select: none;
 }
 
 ul {
@@ -44,9 +72,9 @@ a {
 
 .link {
     margin-top: 10px;
-    color: black;
-    border: 1px solid black;
-    padding: 3px;
+    color: white;
+    border: 1px solid white;
+    padding: 5px;
 }
 
 .last {
@@ -65,27 +93,44 @@ li:hover {
     margin-bottom: 2rem;
 }
 
+h2 {
+    user-select: none;
+}
+
 .link_box {
     height: max-content;
     width: max-content;
     text-align: center;
+    user-select: none;
 }
 .link_box:hover {
-    background: black;
+    background: white;
 }
 .link:hover {
-    color: white;
+    color: black;
 }
 
 .music_button {
     color: white;
-    border: 1px solid white;
-    padding: 5px;
     cursor: pointer;
+}
+.music_button:hover {
+    color: black;
+    background: white;
+}
+
+.music_text {
+    color: white;
+    border: 1px solid white;
+    padding: 10px;
+    font-size: 14px;
+}
+.music_text:hover {
+    color: black;
 }
 
 .main {
-    width: 85%;
+    width: 80%;
     float: right;
 }
 
@@ -93,16 +138,23 @@ li:hover {
     width: 50%;
     text-align: center;
     padding: 0 3rem;
+    color: white;
+    z-index: 5;
+    line-height: 1.5rem;
 }
 
 .block {
     padding-top: 3rem;
-    font-size: 20px;
     flex-direction: column;
+    font-size: 17px;
 }
 
 .tag {
     animation: 1s linear 0s normal none infinite running rot;
+}
+
+kbd {
+    font-weight: bold;
 }
 
 @keyframes rot {
