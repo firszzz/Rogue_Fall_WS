@@ -1,16 +1,11 @@
-@font-face {
-    font-family: "PressStart";
-    src: url("static/PressStart.TTF") format("truetype");
-    font-style: normal;
-    font-weight: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 * {
     outline: 0;
     padding: 0;
     margin: 0;
     border: 0;
-    font-family: "PressStart", sans-serif;
+    font-family: 'Press Start 2P', cursive;
 }
 
 html {
