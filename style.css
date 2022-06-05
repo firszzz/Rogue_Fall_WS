@@ -21,7 +21,6 @@ body {
 .bg {
     z-index: -1;
     position: fixed;
-    width: 100vw;
     height: 100vh;
 }
 
@@ -37,7 +36,7 @@ video {
     z-index: 1;
 }
 
-header {
+.header {
     width: 20%;
     height: 100vh;
     background: black;
@@ -164,13 +163,42 @@ kbd {
     }
 }
 
+@media (max-width: 1400px) {
+    .bg {
+        display: none;
+    }
 
+    .blur {
+        background: rgba(0, 0, 0, .9);
+    }
 
+    .music_text {
+        font-size: 10px;
+    }
+}
 
+@media (max-width: 1000px), (orientation: portrait) {
+    .bg, .logo, .music_button, li {
+        display: none;
+    }
 
+    .hidden_name {
+        display: block;
+    }
 
+    .text {
+        width: 100%;
+        padding: 0 1rem;
+    }
 
+    .block {
+        font-size: 14px;
+    }
 
+    .blur {
+        background: rgba(0, 0, 0, .9);
+    }
+}
 
 .flex {
     display: flex;
